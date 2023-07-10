@@ -125,6 +125,13 @@ def send_msg(msg,recipient):
         to=recipient
     )
 
+@app.route("/",methods=["GET"])
+def get():
+    
+    return "OK",200
+
+
+
 @app.route("/webhook",methods=["POST"])
 def webhook():
     # import pdb
