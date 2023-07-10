@@ -8,7 +8,7 @@ import gspread
 from gspread_dataframe import set_with_dataframe
 
 sa=gspread
-sa = gspread.service_account("./AppData/Roaming/gspread/service_account.json")
+sa = gspread.service_account("service_account.json")
 sh = sa.open("Home Pantry")
 
 app=Flask(__name__)
